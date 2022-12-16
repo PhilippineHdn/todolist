@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do list of the day</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/49f2305173.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+      <h1>
+        To do list of the day
+      </h1>
+    </header>
+    <form>
+      <div class="form-child">
+        <input type="text" class="todo-input" placeholder="Write your task here...">
+        <button class="todo-button" type="submit">
+          <span class="fa-solid fa-square-plus"></span>
+        </button>
+        <div class="select">
+          <select name="todo-all" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Done</option>
+            <option value="uncompleted">Not yet done</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
